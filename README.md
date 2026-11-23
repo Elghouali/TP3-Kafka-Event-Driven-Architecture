@@ -1,5 +1,14 @@
 # TP3 — Event Driven Architecture | Kafka · Spring Cloud Stream · Kafka Streams
 
+**Event-driven sales processing demo · Java 21 · Spring Boot · Kafka · Kafka Streams**
+
+[![Java](https://img.shields.io/badge/Java-21-ED8B00?logo=openjdk&logoColor=white)](https://openjdk.org/)
+[![Apache Kafka](https://img.shields.io/badge/Apache_Kafka-Streaming-231F20?logo=apachekafka&logoColor=white)](https://kafka.apache.org/)
+[![Spring](https://img.shields.io/badge/Spring_Cloud-Stream-6DB33F?logo=spring&logoColor=white)](https://spring.io/projects/spring-cloud-stream)
+
+**Portfolio summary:** A modular Java application for publishing sales events, consuming Kafka topics, computing live product-level aggregates with Kafka Streams, and displaying results in a browser dashboard. This is an academic implementation; end-to-end runtime verification is described below.
+
+
 > **ENSET · II-BDCC3 · Systèmes Distribués et DevOps · Prof. Mohamed YOUSSFI**
 
 Project matching the three-part Google Classroom assignment of **19 October 2026**: Kafka + ZooKeeper CLI; Docker Compose; REST producer, consumer, scheduled supplier, real-time Kafka Streams analytics, and a live web dashboard.
