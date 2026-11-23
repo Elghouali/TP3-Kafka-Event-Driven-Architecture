@@ -1,0 +1,15 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: tp3-producer
+  cloud:
+    stream:
+      output-bindings: sales-out-0
+      kafka:
+        binder:
+          brokers: ${KAFKA_BROKERS:localhost:9092}
+      bindings:
+        sales-out-0:
+          destination: sales-events
+          content-type: text/plain
