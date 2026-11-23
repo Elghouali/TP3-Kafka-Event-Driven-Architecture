@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ENSET TP3 — Live Kafka Sales Analytics</title>
+<link rel="stylesheet" href="/styles.css">
+</head><body>
+<header><div class="brand">ENSET <span>/</span> TP03</div><div id="connection" class="pill">Connecting…</div></header>
+<main>
+<section class="hero"><div class="eyebrow">EVENT-DRIVEN ARCHITECTURE</div><h1>Live sales analytics<span>.</span></h1><p>Kafka Streams · Spring Cloud Stream · Server-Sent Events</p></section>
+<section class="stats"><article><small>Total revenue</small><strong id="revenue">0.00 MAD</strong></article><article><small>Orders processed</small><strong id="orders">0</strong></article><article><small>Units sold</small><strong id="units">0</strong></article><article><small>Active products</small><strong id="products">0</strong></article></section>
+<section class="workspace"><div class="section-title"><h2>Revenue by product</h2><span>Updates automatically</span></div><div id="bars" class="bars"><p class="empty">Awaiting Kafka events…</p></div></section>
+<section class="workspace"><div class="section-title"><h2>Streaming snapshots</h2><span>Aggregated totals, not individual orders</span></div>
+<div class="table-wrap"><table><thead><tr><th>Product</th><th>Orders</th><th>Units</th><th>Revenue (MAD)</th><th>Last event</th></tr></thead><tbody id="table"><tr><td colspan="5" class="empty">No events yet. Start the supplier or POST a sale.</td></tr></tbody></table></div></section>
+<footer>TP3 · Mohamed YOUSSFI · Systèmes Distribués et DevOps · II-BDCC3</footer>
+</main><script src="/app.js"></script></body></html>

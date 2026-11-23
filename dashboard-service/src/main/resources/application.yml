@@ -1,0 +1,17 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: tp3-dashboard
+  cloud:
+    function:
+      definition: dashboardUpdate
+    stream:
+      kafka:
+        binder:
+          brokers: ${KAFKA_BROKERS:localhost:9092}
+      bindings:
+        dashboardUpdate-in-0:
+          destination: sales-analytics
+          group: tp3-dashboard-v1
+          content-type: text/plain

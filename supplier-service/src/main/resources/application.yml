@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: tp3-supplier
+  cloud:
+    function:
+      definition: supplySales
+    stream:
+      poller:
+        fixed-delay: 8000
+        initial-delay: 4000
+      kafka:
+        binder:
+          brokers: ${KAFKA_BROKERS:localhost:9092}
+      bindings:
+        supplySales-out-0:
+          destination: sales-events
+          content-type: text/plain

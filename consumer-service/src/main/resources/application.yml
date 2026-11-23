@@ -1,0 +1,19 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: tp3-consumer
+  cloud:
+    function:
+      definition: logSales
+    stream:
+      kafka:
+        binder:
+          brokers: ${KAFKA_BROKERS:localhost:9092}
+      bindings:
+        logSales-in-0:
+          destination: sales-events
+          group: tp3-console-consumer
+          content-type: text/plain
+          consumer:
+            concurrency: 1
