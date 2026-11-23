@@ -1,0 +1,46 @@
+{
+  "info": {
+    "name": "ENSET TP3 Kafka Event-Driven Architecture",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create sale (Producer 8081)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "http://localhost:8081/api/sales",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"product\": \"Laptop\", \"region\": \"Casablanca\", \"quantity\": 2, \"unitPrice\": 6500.0}"
+        }
+      }
+    },
+    {
+      "name": "Get consumer stats",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8082/api/consumer/stats"
+      }
+    },
+    {
+      "name": "Get live analytics snapshot",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8080/api/analytics"
+      }
+    },
+    {
+      "name": "Get SSE stream",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8080/api/stream"
+      }
+    }
+  ]
+}
